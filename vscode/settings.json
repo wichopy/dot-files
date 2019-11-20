@@ -1,0 +1,98 @@
+{
+    "editor.tabSize": 2,
+    "editor.renderWhitespace": "boundary",
+    "terminal.integrated.fontFamily": "Meslo LG M DZ for Powerline",
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "javascript.referencesCodeLens.enabled": true,
+    "mocha.files.glob": "./common/**/*.test.js",
+    "mocha.requires": [
+        "@babel/polyfill",
+        "@babel/register"
+    ],
+    "workbench.colorTheme": "SynthWave '84",
+    "window.zoomLevel": -2,
+    "editor.formatOnSave": true,
+    "vscode_custom_css.imports": [
+        "https://github.com/wesbos/cobalt2-vscode/blob/master/cobalt2-custom-hacks.css"
+    ],
+    "vscode_custom_css.policy": true,
+    "git.autofetch": true,
+    "git.enableCommitSigning": true,
+    "sshfs.configs": [
+        {
+            "label": "digital-ocean-nginx",
+            "root": "/etc/nginx",
+            "host": "198.199.81.157",
+            "port": 22,
+            "username": "root",
+            "password": true,
+            "privateKeyPath": "/Users/wchou/.ssh/digital_ocean_secure",
+            "passphrase": true,
+            "name": "digital-ocean-nginx"
+        },
+        {
+            "label": "digital-ocean-pushme",
+            "root": "/var/www/pushme",
+            "host": "198.199.81.157",
+            "port": 22,
+            "username": "root",
+            "password": true,
+            "privateKeyPath": "/Users/wchou/.ssh/digital_ocean_secure",
+            "passphrase": true,
+            "name": "digitalocean_pushme_site"
+        },
+        {
+            "label": "digital-ocean-gameoflife",
+            "root": "/var/www/game-of-life",
+            "host": "198.199.81.157",
+            "port": 22,
+            "username": "root",
+            "password": true,
+            "privateKeyPath": "/Users/wchou/.ssh/digital_ocean_secure",
+            "passphrase": true,
+            "name": "digitalocean_gameoflife_site"
+        }
+    ],
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "scope": [
+                    //following will be in italic (=FlottFlott)
+                    "comment",
+                    "entity.name.type.class", //class names
+                    "keyword", //import, export, return…
+                    "constant", //String, Number, Boolean…, this, super
+                    "storage.modifier", //static keyword
+                    "storage.type.class.js", //class keyword
+                ],
+                "settings": {
+                    "fontStyle": "italic"
+                }
+            },
+            {
+                "scope": [
+                    //following will be excluded from italics (VSCode has some defaults for italics)
+                    "invalid",
+                    "keyword.operator",
+                    "constant.numeric.css",
+                    "keyword.other.unit.px.css",
+                    "constant.numeric.decimal.js",
+                    "constant.numeric.json"
+                ],
+                "settings": {
+                    "fontStyle": ""
+                }
+            }
+        ]
+    },
+    "editor.fontLigatures": false,
+    "editor.fontFamily": "'Fira Code iScript', Consolas, 'Courier New', monospace",
+    "workbench.editor.showTabs": true,
+    "eslint.autoFixOnSave": true,
+    "gitlens.mode.active": "zen",
+    "python.jediEnabled": false,
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "liveshare.featureSet": "insiders",
+    "go.useLanguageServer": true
+}
